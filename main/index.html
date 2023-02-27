@@ -37,7 +37,8 @@
         <script src="../assets/js/uikit.min.js"></script>
         <script src="../assets/js/uikit-components.js"></script>
     </head>
-    <body class="uni-body">
+    <body class="uni-body ">
+        
 
         <!-- Dark/Light toggle -->
 
@@ -108,6 +109,7 @@
                                         <li><a href="#uni_roadmap">Roadmap</a></li>
                                         <li><a href="#uni_collection">Portfolio</a></li>
                                         <li><a href="blog.html">Blog</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
                                     </ul>
                                 </div>
 
@@ -142,6 +144,7 @@
 
             <!-- Hero start -->
             <div id="uni_hero" class="uni-hero uk-section-2xlarge uk-section-xlarge@m uk-padding-remove-bottom@m uk-panel">
+                
                 <div class="uk-position-top uk-position-z-index-negative uk-overflow-hidden uk-blend-overlay" data-uk-height-viewport="">
                     <img class="uk-position-top-left uk-position-fixed uk-blur-large" style="left: -4%; top: -4%" width="500" src="../assets/images/gradient-circle.svg" alt="Circle">
                     <img class="uk-position-bottom-right uk-position-fixed uk-blur-large" style="right: -4%; bottom: -4%" width="500" src="../assets/images/gradient-circle.svg" alt="Circle">
@@ -243,6 +246,7 @@
                             <h2 class="uk-h3 uk-h1@m">Why <span class="uk-text-gradient">choose us!</span></h2>
                         </div>
                     </header>
+                    
                     <div class="uk-grid uk-grid-2xlarge uk-grid-3xlarge@m uk-child-width-1-1" data-uk-grid="">
                         <div>
                             <div class="uk-panel">
@@ -349,6 +353,7 @@
 
             <!-- how it works start -->
             <div id="uni_process" class="uni-process uk-section uk-section-xlarge@m uk-panel">
+                
                 <div class="uk-container">
                     <header class="uk-grid-xsmall uk-flex-center uk-flex-middle uk-grid" data-uk-grid data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 100;">
                         <div class="uk-panel uk-text-center">
@@ -438,6 +443,7 @@
             <img class="uk-width-2xsmall uk-flex-center uk-margin-auto uk-margin-medium uk-margin-large@m" src="../assets/images/divider-01.svg" alt="Divider" data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 100;">
 
             <div id="uni_roadmap" class="uni-roadmap uk-section uk-section-large@m uk-panel uk-overflow-hidden">
+                
                 <div class="uk-container">
                     <header class="uk-grid-xsmall uk-flex-center uk-flex-middle uk-text-center uk-child-width-auto@m uk-grid" data-uk-grid>
                         <div class="uk-panel">
@@ -924,6 +930,7 @@
 
             <!-- faq start -->
             <div id="uni_faq" class="uni-faq uk-section uk-section-large@m uk-panel uk-overflow-hidden uk-padding-2xlarge-bottom@m">
+                
                 <div class="uk-container">
                     <header class="uk-grid-xsmall uk-flex-center uk-flex-middle uk-text-center uk-child-width-auto@m uk-grid" data-uk-grid data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 100;">
                         <div class="uk-panel">
@@ -1089,6 +1096,13 @@
                 document.documentElement.classList.remove("uk-dark");
                 localStorage.setItem("darkMode", "0");
             }
+        </script>
+        <script>
+            jQuery(document).ready(function () {
+                jQuery(".container-wrap").append(
+                    "<ul class='circles'><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>"
+                );
+            }); 
         </script>
     </body>
 </html>
