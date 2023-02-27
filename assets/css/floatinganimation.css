@@ -55,6 +55,41 @@ html {
   box-shadow: 171px 907px #FFF , 1655px 1777px #FFF , 505px 1912px #FFF , 1833px 931px #FFF , 580px 1750px #FFF , 1296px 1596px #FFF , 104px 1826px #FFF , 1559px 1500px #FFF , 469px 552px #FFF , 788px 795px #FFF , 625px 1030px #FFF , 489px 1092px #FFF , 233px 686px #FFF , 920px 1024px #FFF , 461px 1264px #FFF , 1821px 371px #FFF , 1239px 930px #FFF , 560px 1766px #FFF , 746px 1316px #FFF , 1118px 1978px #FFF , 364px 1094px #FFF , 442px 1607px #FFF , 1247px 1620px #FFF , 1812px 1531px #FFF , 187px 1621px #FFF , 1077px 746px #FFF , 937px 1468px #FFF , 1432px 1895px #FFF , 1775px 370px #FFF , 632px 222px #FFF , 458px 1732px #FFF , 488px 17px #FFF , 1467px 42px #FFF , 1533px 115px #FFF , 248px 436px #FFF , 1836px 1898px #FFF , 328px 726px #FFF , 182px 1875px #FFF , 1074px 1950px #FFF , 1210px 257px #FFF , 1313px 132px #FFF , 1298px 30px #FFF , 213px 1247px #FFF , 526px 1364px #FFF , 1573px 1759px #FFF , 1151px 584px #FFF , 1684px 816px #FFF , 728px 1614px #FFF , 54px 1225px #FFF , 370px 1370px #FFF , 761px 1525px #FFF , 657px 1707px #FFF , 1844px 1843px #FFF , 804px 852px #FFF , 185px 140px #FFF , 1816px 1419px #FFF , 1099px 840px #FFF , 1973px 1584px #FFF , 728px 752px #FFF , 737px 1365px #FFF , 1975px 252px #FFF , 529px 726px #FFF , 1573px 749px #FFF , 255px 1666px #FFF , 1459px 1511px #FFF , 1255px 164px #FFF , 1093px 558px #FFF , 1019px 51px #FFF , 1851px 146px #FFF , 736px 145px #FFF , 208px 1735px #FFF , 658px 1443px #FFF , 845px 1228px #FFF , 94px 116px #FFF , 847px 1610px #FFF , 798px 37px #FFF , 1707px 1389px #FFF , 32px 842px #FFF , 208px 999px #FFF , 1726px 1968px #FFF , 393px 1846px #FFF , 811px 1076px #FFF , 1771px 1618px #FFF , 1068px 1410px #FFF , 860px 719px #FFF , 1112px 248px #FFF , 516px 1599px #FFF , 208px 1274px #FFF , 1452px 295px #FFF , 1812px 487px #FFF , 907px 561px #FFF , 736px 126px #FFF , 1829px 1411px #FFF , 450px 811px #FFF , 949px 1805px #FFF , 1333px 1272px #FFF , 299px 1811px #FFF , 501px 553px #FFF , 1525px 1867px #FFF , 1079px 1091px #FFF;
 }
 
+.bitcoin{
+	width: 40px;
+	position: sticky;
+	animation: bitcoin 10s infinite ease-in-out;
+	z-index: -1;
+}
+.bitcoin-2{
+	width: 40px;
+	position: sticky;
+	animation: bitcoin-2 10s infinite ease-in-out;
+	z-index: -1;
+}
+@keyframes bitcoin {
+	0%{
+		transform: translate(20px,20px);
+	}
+	50%{
+		transform: translate(-20px,-20px);
+	}
+	100%{
+		transform: translate(20px,20px);
+	}
+  }
+
+  @keyframes bitcoin-2 {
+	0%{
+		transform: translate(-20px,-20px);
+	}
+	50%{
+		transform: translate(20px,20px);
+	}
+	100%{
+		transform: translate(-20px,-20px);
+	}
+  }
 
 @keyframes animStar {
   from {
@@ -64,3 +99,5 @@ html {
     transform: translateY(-2000px);
   }
 }
+
+
